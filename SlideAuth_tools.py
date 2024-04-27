@@ -75,7 +75,7 @@ with sync_playwright() as p:
     distance = int(get_distance("background.png", "gap.png"))
 
     # web側のスライドをキャッチ
-    slide = page.locator('//*[@id="JDJRV-wrap-loginsubmit"]/div/div/div/div[2]/div[3]')
+    slide = page.locator('//*[@id="JDJRV-wrap-loginsubmit"]/div/div/div/div[2]/div[3]') # 必要に応じて変更
     # パズルの位置を検索（辞書の4桁数字を返す）
     # {'x': 858, 'y': 339.9921875, 'width': 55, 'height': 55}
     box = slide.bounding_box()
